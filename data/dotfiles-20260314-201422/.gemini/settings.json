@@ -1,0 +1,21 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "ui": {
+    "theme": "Default"
+  },
+  "general": {
+    "sessionRetention": {
+      "enabled": true,
+      "warningAcknowledged": true,
+      "maxAge": "30d"
+    },
+    "previewFeatures": true
+  },
+  "output": {
+    "format": "text"
+  }
+}

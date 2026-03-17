@@ -1,5 +1,5 @@
 Homebrew Installed Packages
-Generated: 2026-03-14 20:18:51
+Generated: 2026-03-17 13:48:03
 Homebrew: Homebrew 5.1.0
 
 === Formulae ===
@@ -8,6 +8,7 @@ agent-browser
 aider
 aoe
 aom
+ast-grep
 atuin
 bat
 brotli
@@ -24,6 +25,7 @@ coreutils
 dav1d
 deno
 devcockpit
+dust
 ekphos
 emacs
 eza
@@ -135,6 +137,7 @@ openjph
 openssl@3
 opus
 p11-kit
+parallel
 pcre
 pcre2
 pi-coding-agent
@@ -157,6 +160,7 @@ resvg
 ripgrep
 rpm
 rumdl
+sd
 sdl2
 sevenzip
 shared-mime-info
@@ -183,6 +187,7 @@ x265
 xorgproto
 xz
 yazi
+yq
 yt-dlp
 zimfw
 zoxide

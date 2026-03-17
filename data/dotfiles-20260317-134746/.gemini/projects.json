@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "/Users/guy": "guy",
+    "/Users/guy/dev": "dev",
+    "/Users/guy/dev/ai-ml/poc-gemini": "poc-gemini",
+    "/Users/guy/dev/ai-ml/agents/openclaw": "openclaw",
+    "/Users/guy/dev/tools/claude-chrome-walmart": "claude-chrome-walmart"
+  }
+}

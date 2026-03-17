@@ -83,7 +83,9 @@ updateGitRepos() {
                 [[ -d "$agent_dir" ]] || continue
                 if [[ -d "$agent_dir/.git" ]]; then
                     echo "\nUpdating git repo in $agent_dir..."
-                    (cd "$agent_dir" && git pull)
+                    if ! (cd "$agent_dir" && git pull); then
+                        _upd_failed_pulls+=("$agent_dir")
+                    fi
                 else
                     echo "Skipping $agent_dir (not a git repository)"
                 fi
@@ -101,6 +103,7 @@ updateGitRepos() {
 
 upd() {
     local counter_file="$HOME/.upd_counter"
+    typeset -g _upd_failed_pulls=()
 
     # Run update and upgrade
     brew update && brew upgrade
@@ -147,6 +150,16 @@ upd() {
     fi
 
     echo "$count" >| "$counter_file"
+
+    # Report any failed git pulls
+    if (( ${#_upd_failed_pulls[@]} > 0 )); then
+        echo "\n--- Git Pull Failures ---"
+        for repo in "${_upd_failed_pulls[@]}"; do
+            echo "  FAILED: $repo"
+        done
+        echo "--- End of Report ---"
+    fi
+    unset _upd_failed_pulls
 }
 
 function y() {

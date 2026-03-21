@@ -1,5 +1,5 @@
 Homebrew Installed Packages
-Generated: 2026-03-17 13:48:03
+Generated: 2026-03-21 12:56:32
 Homebrew: Homebrew 5.1.0
 
 === Formulae ===
@@ -28,6 +28,7 @@ devcockpit
 dust
 ekphos
 emacs
+exiftool
 eza
 fabric-ai
 fd

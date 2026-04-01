@@ -76,7 +76,7 @@ updateGitRepos() {
     count=$((count + 1))
 
     if [[ $count -ge 5 ]]; then
-        local agents_dir="/Users/guy/dev/ai-ml/agents"
+        local agents_dir="/Users/guy/dev/ai/agents"
         echo "Updating git repos (run $count/5)..."
         if [[ -d "$agents_dir" ]]; then
             for agent_dir in "$agents_dir"/*/; do
@@ -105,8 +105,23 @@ upd() {
     local counter_file="$HOME/.upd_counter"
     typeset -g _upd_failed_pulls=()
 
-    # Run update and upgrade
-    brew update && brew upgrade
+    # Read counter early to gate brew update
+    local count=0
+    if [[ -f "$counter_file" ]]; then
+        count=$(cat "$counter_file")
+    fi
+    count=$((count + 1))
+
+    # Run brew update only every 5th run
+    if [[ $count -ge 5 ]]; then
+        brew update &>/dev/null
+    fi
+    brew upgrade
+
+    # Update Todoist CLI
+    if command -v td &>/dev/null; then
+        td update
+    fi
 
     # Update git repositories
     updateGitRepos
@@ -115,7 +130,6 @@ upd() {
     if docker info &>/dev/null; then
         local compose_dirs=(
             "/Users/guy/dev/automation/n8n"
-            "/Users/guy/dev/ai-ml/tools/agent_zero"
         )
 
         for compose_dir in "${compose_dirs[@]}"; do
@@ -132,14 +146,6 @@ upd() {
     else
         echo "Skipping docker-compose (Docker not running)"
     fi
-
-    # Track cleanup runs
-    local count=0
-    if [[ -f "$counter_file" ]]; then
-        count=$(cat "$counter_file")
-    fi
-
-    count=$((count + 1))
 
     if [[ $count -ge 5 ]]; then
         echo "Running brew cleanup (run $count/5)..."

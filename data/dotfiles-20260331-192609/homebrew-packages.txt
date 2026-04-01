@@ -1,6 +1,6 @@
 Homebrew Installed Packages
-Generated: 2026-03-21 12:56:32
-Homebrew: Homebrew 5.1.0
+Generated: 2026-03-31 19:26:27
+Homebrew: Homebrew 5.1.3
 
 === Formulae ===
 ada-url
@@ -42,6 +42,7 @@ gemini-cli
 gettext
 gh
 giflib
+git-crypt
 glib
 gmp
 gnupg
@@ -208,7 +209,7 @@ bruno
 capacities
 chatgpt
 claude
-claude-code
+claude-code@latest
 claudebar
 cmux
 copilot
@@ -237,6 +238,7 @@ localsend
 macwhisper
 microsoft-edge
 monokle
+notchi
 obsidian
 onlyoffice
 opencode-desktop

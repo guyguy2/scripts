@@ -36,6 +36,7 @@ fpath=("$HOME/.docker/completions" $fpath)
 
 # General
 alias c='clear'
+alias sqlite3='/usr/bin/sqlite3'
 
 # Python
 alias pip='pip3'
@@ -77,6 +78,9 @@ updateGitRepos() {
 
     if [[ $count -ge 5 ]]; then
         local agents_dir="/Users/guy/dev/ai/agents"
+        local extra_repos=(
+            "$HOME/dev/experiments/firecrawl"
+        )
         echo "Updating git repos (run $count/5)..."
         if [[ -d "$agents_dir" ]]; then
             for agent_dir in "$agents_dir"/*/; do
@@ -93,6 +97,16 @@ updateGitRepos() {
         else
             echo "Skipping $agents_dir (directory not found)"
         fi
+        for repo_dir in "${extra_repos[@]}"; do
+            if [[ -d "$repo_dir/.git" ]]; then
+                echo "\nUpdating git repo in $repo_dir..."
+                if ! (cd "$repo_dir" && git pull); then
+                    _upd_failed_pulls+=("$repo_dir")
+                fi
+            else
+                echo "Skipping $repo_dir (not a git repository)"
+            fi
+        done
         count=0
     else
         echo "Skipping git repo updates (run $count/5)"

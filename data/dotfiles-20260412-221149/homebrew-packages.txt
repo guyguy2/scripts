@@ -1,6 +1,6 @@
 Homebrew Installed Packages
-Generated: 2026-03-31 19:26:27
-Homebrew: Homebrew 5.1.3
+Generated: 2026-04-12 22:12:06
+Homebrew: Homebrew 5.1.5
 
 === Formulae ===
 ada-url
@@ -146,7 +146,6 @@ pi-coding-agent
 pinentry
 pixman
 pkgconf
-playwright-cli
 poppler
 popt
 portaudio
@@ -191,6 +190,7 @@ xz
 yazi
 yq
 yt-dlp
+zellij
 zimfw
 zoxide
 zsh
@@ -198,6 +198,7 @@ zstd
 
 === Casks ===
 antigravity
+anytype
 appcleaner
 aqua-voice
 audacity

@@ -1,0 +1,128 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "ui": {
+    "theme": "Default",
+    "showModelInfoInChat": true
+  },
+  "general": {
+    "sessionRetention": {
+      "enabled": true,
+      "warningAcknowledged": true,
+      "maxAge": "30d"
+    },
+    "previewFeatures": true
+  },
+  "output": {
+    "format": "text"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "claude-mem",
+            "type": "command",
+            "command": "\"bun\" \"/Users/guy/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs\" hook gemini-cli context",
+            "timeout": 10000
+          }
+        ]
+      }
+    ],
+    "BeforeAgent": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "claude-mem",
+            "type": "command",
+            "command": "\"bun\" \"/Users/guy/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs\" hook gemini-cli user-message",
+            "timeout": 10000
+          }
+        ]
+      }
+    ],
+    "AfterAgent": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "claude-mem",
+            "type": "command",
+            "command": "\"bun\" \"/Users/guy/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs\" hook gemini-cli observation",
+            "timeout": 10000
+          }
+        ]
+      }
+    ],
+    "BeforeTool": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "claude-mem",
+            "type": "command",
+            "command": "\"bun\" \"/Users/guy/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs\" hook gemini-cli observation",
+            "timeout": 10000
+          }
+        ]
+      }
+    ],
+    "AfterTool": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "claude-mem",
+            "type": "command",
+            "command": "\"bun\" \"/Users/guy/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs\" hook gemini-cli observation",
+            "timeout": 10000
+          }
+        ]
+      }
+    ],
+    "PreCompress": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "claude-mem",
+            "type": "command",
+            "command": "\"bun\" \"/Users/guy/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs\" hook gemini-cli summarize",
+            "timeout": 10000
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "claude-mem",
+            "type": "command",
+            "command": "\"bun\" \"/Users/guy/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs\" hook gemini-cli observation",
+            "timeout": 10000
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "claude-mem",
+            "type": "command",
+            "command": "\"bun\" \"/Users/guy/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs\" hook gemini-cli session-complete",
+            "timeout": 10000
+          }
+        ]
+      }
+    ]
+  }
+}

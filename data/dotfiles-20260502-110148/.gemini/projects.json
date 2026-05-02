@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "/Users/guy": "guy",
+    "/Users/guy/dev": "dev",
+    "/Users/guy/dev/ai-ml/poc-gemini": "poc-gemini",
+    "/Users/guy/dev/ai-ml/agents/openclaw": "openclaw",
+    "/Users/guy/dev/tools/claude-chrome-walmart": "claude-chrome-walmart",
+    "/Users/guy/dev/tools/tmp": "tmp",
+    "/Users/guy/dev/android/SimpleSchoolBus": "simpleschoolbus",
+    "/Users/guy/Downloads": "downloads",
+    "/Users/guy/Library/CloudStorage/Dropbox/Documents/Guy": "guy-1",
+    "/Users/guy/dev/automation/python/pdfiller": "pdfiller",
+    "/Users/guy/dev/tmp/gym_app": "gym-app",
+    "/Users/guy/dev/experiments": "experiments",
+    "/Users/guy/dev/tmp": "tmp-1",
+    "/Users/guy/dev/tmp/birthday_edit": "birthday-edit",
+    "/Users/guy/dev/tmp/chromeExt": "chromeext",
+    "/Users/guy/dev/android/span": "span"
+  }
+}

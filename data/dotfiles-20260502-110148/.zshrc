@@ -54,7 +54,7 @@ alias gacp='git add . && git commit -m "progress" && git push'
 alias cld='claude'
 alias clda='cld --dangerously-skip-permissions'
 alias clds='cld --dangerously-skip-permissions --model=sonnet'
-alias cldo='cld --dangerously-skip-permissions --model=opus'
+alias cldo='cld --dangerously-skip-permissions --model="claude-opus-4-7[1m]"'
 alias killClaudes='pkill -9 -f claude'
 
 # Misc
@@ -134,7 +134,14 @@ upd() {
 
     # Update Todoist CLI
     if command -v td &>/dev/null; then
+        echo "Updating Todoist CLI..."
         td update
+    fi
+
+    # Update Android CLI
+    if command -v android &>/dev/null; then
+        echo "Updating Android CLI..."
+        android update
     fi
 
     # Update git repositories
@@ -201,5 +208,10 @@ eval "$(zoxide init zsh)"
 
 # Added by Antigravity
 export PATH="/Users/guy/.antigravity/antigravity/bin:$PATH"
+export PATH="/Users/guy/dev/android/android-cli:$PATH"
 
 eval $(thefuck --alias oops)
+
+alias claude-mem='bun "/Users/guy/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
+
+export FIRECRAWL_API_KEY="fc-575926822ce04daaa60a9a289b3003ff"

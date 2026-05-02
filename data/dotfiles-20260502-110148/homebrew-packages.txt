@@ -1,6 +1,6 @@
 Homebrew Installed Packages
-Generated: 2026-04-12 22:22:38
-Homebrew: Homebrew 5.1.5
+Generated: 2026-05-02 11:01:59
+Homebrew: Homebrew 5.1.8
 
 === Formulae ===
 ada-url
@@ -22,7 +22,9 @@ certifi
 cffi
 cloudflared
 coreutils
+curl
 dav1d
+defuddle
 deno
 devcockpit
 dust
@@ -43,6 +45,7 @@ gettext
 gh
 giflib
 git-crypt
+git-lfs
 glib
 gmp
 gnupg
@@ -68,6 +71,7 @@ just
 kdoctor
 kubernetes-cli
 lame
+lastpass-cli
 lazydocker
 lazygit
 libarchive
@@ -113,14 +117,17 @@ lz4
 lzo
 m4
 mac-cleanup-py
+macmon
 maven
 mermaid-cli
+merve
 micasa
 miller
 mole
 mpdecimal
 mpfr
 mprocs
+nbytes
 ncdu
 ncurses
 nettle
@@ -155,6 +162,7 @@ python-setuptools
 python@3.12
 python@3.13
 python@3.14
+qpdf
 rclone
 readline
 resvg
@@ -164,8 +172,8 @@ rumdl
 sd
 sdl2
 sevenzip
-shared-mime-info
 simdjson
+simdutf
 sqlite
 svt-av1
 tailscale

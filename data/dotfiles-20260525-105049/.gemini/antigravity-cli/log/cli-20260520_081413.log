@@ -1,0 +1,67 @@
+I0520 08:14:13.437907 21367 server.go:1295] Starting language server process with pid 21367
+I0520 08:14:13.440645 21367 server.go:471] Language server will attempt to listen on host localhost
+I0520 08:14:13.443595 21367 server.go:485] Language server listening on random port at 53936 for HTTPS (gRPC)
+I0520 08:14:13.443832 21367 server.go:492] Language server listening on random port at 53937 for HTTP
+W0520 08:14:13.619198 21367 launchmanager.go:68] Entering local chrome mode! This is WRONG unless you are running tests or in eval mode on Linux.
+E0520 08:14:13.625850 21367 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0520 08:14:13.627774 21367 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0520 08:14:13.627795 21367 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0520 08:14:13.627827 21367 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0520 08:14:13.628840 21367 server.go:2240] Auth succeeded, refreshing features and managers
+E0520 08:14:13.628887 21367 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0520 08:14:13.629070 21367 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0520 08:14:13.629083 21367 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0520 08:14:13.629106 21367 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0520 08:14:13.629290 21367 server.go:2246] State refresh took 0ms
+W0520 08:14:13.630253 21367 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0520 08:14:13.630277 21367 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0520 08:14:13.630294 21367 server.go:604] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0520 08:14:13.630539 21367 client.go:81] failed to set auth token
+I0520 08:14:13.638175 21367 server.go:1904] initialized server successfully in 199.755834ms
+W0520 08:14:13.639902 21367 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0520 08:14:13.639995 21367 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0520 08:14:13.640022 21367 server.go:604] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0520 08:14:13.640033 21367 client.go:81] failed to set auth token
+I0520 08:14:13.641134 21367 auto_updater.go:253] Spawned background update process with PID 21370
+I0520 08:14:13.641392 21367 common.go:103] Launching CLI mode
+I0520 08:14:13.642514 21367 project.go:64] project: discovered project "/Users/guy/dev/android" (id=dac48734-6756-42e9-be9b-35a7b3df1a0e) via /Users/guy/dev/android/.antigravitycli
+I0520 08:14:13.642529 21367 common.go:156] project: using project "/Users/guy/dev/android" (id=dac48734-6756-42e9-be9b-35a7b3df1a0e) at /Users/guy/.gemini/config/projects/dac48734-6756-42e9-be9b-35a7b3df1a0e.json
+E0520 08:14:13.642547 21367 common.go:188] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I0520 08:14:13.642574 21367 common.go:197] CLI app data directory: /Users/guy/.gemini/antigravity-cli
+I0520 08:14:13.642584 21367 server.go:200] Creating CLI server backend: product=antigravity workspaceDirs=[] appDataDir=/Users/guy/.gemini/antigravity-cli cascadeManager=true codeAssist=true
+I0520 08:14:13.643592 21367 manager.go:249] Initializing CLI store manager for workspace /Users/guy/dev/android
+E0520 08:14:13.645373 21367 cli_setting_manager.go:350] failed to propagate telemetry setting: error getting token source: You are not logged into Antigravity.
+I0520 08:14:13.645387 21367 cli_setting_manager.go:65] CLI settings initialized: permissions=<nil>, toolPermission=request-review
+W0520 08:14:13.645463 21367 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0520 08:14:13.645473 21367 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0520 08:14:13.645479 21367 server.go:392] failed to get model config: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0520 08:14:13.646102 21367 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0520 08:14:13.646120 21367 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0520 08:14:13.646128 21367 server.go:604] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0520 08:14:13.646139 21367 client.go:81] failed to set auth token
+I0520 08:14:13.646258 21367 manager.go:313] CLI store manager initialized successfully
+I0520 08:14:13.646267 21367 common.go:312] CLI store manager created successfully
+I0520 08:14:13.661942 21367 common.go:402] Starting CLI program
+CLI ready for user input (startup took 20.530834ms)
+ERROR: logging before google.Init: I0520 08:14:13.664790      41 terminal_info_manager.go:160] Terminal detection: TERM="xterm-256color" altScreen=true ssh=false
+I0520 08:14:13.665918 21367 gemini_extensions.go:28] Detecting Gemini extensions in /Users/guy/.gemini/extensions
+I0520 08:14:13.668511 21367 gemini_extensions.go:46] Found 1 extensions: [conductor]
+I0520 08:14:13.738823 21367 manager.go:543] Full redraw completed (rerenderAll) for conversation  (epoch 0, items 1)
+I0520 08:14:14.157939 21367 auth.go:114] ChainedAuth: authenticated via keyring (effective: keyring)
+I0520 08:14:14.868535 21367 http_helpers.go:178] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1b95e541ecf60344
+I0520 08:14:15.269267 21367 http_helpers.go:178] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6dd3a6eef5eaf5c5
+I0520 08:14:15.274218 21367 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (High)"
+I0520 08:14:15.274390 21367 input_loop.go:493] Auth done received, triggering experiment refresh
+I0520 08:14:15.274464 21367 experiment_manager.go:35] Starting experiment refresh after login
+I0520 08:14:15.274632 21367 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (High)"
+I0520 08:14:15.274700 21367 input_loop.go:493] Auth done received, triggering experiment refresh
+I0520 08:14:15.274728 21367 experiment_manager.go:35] Starting experiment refresh after login
+I0520 08:14:15.351050 21367 manager.go:543] Full redraw completed (rerenderAll) for conversation  (epoch 0, items 1)
+I0520 08:14:15.452148 21367 experiment_manager.go:39] Experiments refreshed after login
+I0520 08:14:15.452421 21367 experiment_manager.go:39] Experiments refreshed after login
+I0520 08:14:15.452508 21367 manager.go:932] Reloading system slash commands
+I0520 08:14:15.452577 21367 manager.go:932] Reloading system slash commands
+I0520 08:14:15.473482 21367 manager.go:936] Slash commands unchanged, skipping update
+I0520 08:14:17.658536 21367 common.go:407] CLI program exited, shutting down
+I0520 08:14:17.658942 21367 manager.go:451] CLI store manager shutting down
+I0520 08:14:17.660717 21367 server.go:2152] Language server shutting down

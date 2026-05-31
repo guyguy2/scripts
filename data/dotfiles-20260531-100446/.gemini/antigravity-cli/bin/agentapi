@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "/Users/guy/.local/bin/agy" agentapi "$@"

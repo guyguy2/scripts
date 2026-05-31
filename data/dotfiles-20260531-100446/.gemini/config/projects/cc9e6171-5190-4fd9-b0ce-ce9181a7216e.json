@@ -1,0 +1,14 @@
+{
+  "id": "cc9e6171-5190-4fd9-b0ce-ce9181a7216e",
+  "name": "/Users/guy/dev/tmp/canva/photos",
+  "projectResources": {
+    "resources": [
+      {
+        "gitFolder": {
+          "folderUri": "file:///Users/guy/dev/tmp/canva/photos",
+          "allowWrite": true
+        }
+      }
+    ]
+  }
+}

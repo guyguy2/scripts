@@ -1,0 +1,22 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "ui": {
+    "theme": "Default",
+    "showModelInfoInChat": true
+  },
+  "general": {
+    "sessionRetention": {
+      "enabled": true,
+      "warningAcknowledged": true,
+      "maxAge": "30d"
+    },
+    "previewFeatures": true
+  },
+  "output": {
+    "format": "text"
+  }
+}

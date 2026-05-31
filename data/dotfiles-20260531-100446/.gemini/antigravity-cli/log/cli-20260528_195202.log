@@ -1,0 +1,84 @@
+I0528 19:52:02.196190 74753 server.go:1306] Starting language server process with pid 74753
+I0528 19:52:02.196853 74753 server.go:476] Language server will attempt to listen on host localhost
+I0528 19:52:02.197921 74753 server.go:490] Language server listening on random port at 62452 for HTTPS (gRPC)
+I0528 19:52:02.198202 74753 server.go:497] Language server listening on random port at 62453 for HTTP
+W0528 19:52:02.327609 74753 launchmanager.go:69] Entering local chrome mode! This is WRONG unless you are running tests or in eval mode on Linux.
+E0528 19:52:02.331377 74753 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0528 19:52:02.331938 74753 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0528 19:52:02.331959 74753 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0528 19:52:02.331993 74753 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0528 19:52:02.332446 74753 server.go:2274] Auth succeeded, refreshing features and managers
+E0528 19:52:02.332481 74753 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0528 19:52:02.332639 74753 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0528 19:52:02.332651 74753 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0528 19:52:02.332676 74753 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0528 19:52:02.332861 74753 server.go:2280] State refresh took 0ms
+I0528 19:52:02.338208 74753 server.go:1938] initialized server successfully in 141.85275ms
+I0528 19:52:02.338676 74753 auto_updater.go:207] Last check was less than 15 minutes ago, skipping update
+I0528 19:52:02.338719 74753 common.go:103] Launching CLI mode
+W0528 19:52:02.338956 74753 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0528 19:52:02.338971 74753 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0528 19:52:02.339003 74753 server.go:609] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0528 19:52:02.339033 74753 client.go:81] failed to set auth token
+I0528 19:52:02.339066 74753 project.go:58] project: discovered project "/Users/guy/dev/ai/ai-tools/todoist" (id=bcbb2731-8e34-45f2-8f1d-7d97e91c59ec) via /Users/guy/dev/ai/ai-tools/todoist/.antigravitycli
+I0528 19:52:02.339082 74753 common.go:156] project: using project "/Users/guy/dev/ai/ai-tools/todoist" (id=bcbb2731-8e34-45f2-8f1d-7d97e91c59ec) at /Users/guy/.gemini/config/projects/bcbb2731-8e34-45f2-8f1d-7d97e91c59ec.json
+E0528 19:52:02.339097 74753 common.go:194] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I0528 19:52:02.339111 74753 common.go:203] CLI app data directory: /Users/guy/.gemini/antigravity-cli
+I0528 19:52:02.339171 74753 server.go:207] Creating CLI server backend: product=antigravity workspaceDirs=[] appDataDir=/Users/guy/.gemini/antigravity-cli cascadeManager=true codeAssist=true
+I0528 19:52:02.339330 74753 manager.go:250] Initializing CLI store manager for workspace /Users/guy/dev/ai/ai-tools/todoist
+I0528 19:52:02.339774 74753 cli_setting_manager.go:626] Skipping telemetry propagation because user is not logged in
+I0528 19:52:02.339783 74753 cli_setting_manager.go:66] CLI settings initialized: permissions=<nil>, toolPermission=request-review
+I0528 19:52:02.340018 74753 manager.go:321] CLI store manager initialized successfully
+I0528 19:52:02.340027 74753 common.go:318] CLI store manager created successfully
+I0528 19:52:02.345039 74753 common.go:408] Starting CLI program
+CLI ready for user input (startup took 6.305458ms)
+ERROR: logging before google.Init: I0528 19:52:02.346950      33 terminal_info_manager.go:160] Terminal detection: TERM="xterm-256color" altScreen=true ssh=false
+I0528 19:52:02.347546 74753 gemini_extensions.go:28] Detecting Gemini extensions in /Users/guy/.gemini/extensions
+I0528 19:52:02.347746 74753 gemini_extensions.go:46] Found 1 extensions: [conductor]
+I0528 19:52:02.419915 74753 manager.go:551] Full redraw completed (rerenderAll) for conversation  (epoch 0, items 1)
+I0528 19:52:02.493157 74753 auth.go:114] ChainedAuth: authenticated via keyring (effective: keyring)
+I0528 19:52:02.493200 74753 server_oauth.go:212] applyAuthResult: email=guyguy2@gmail.com, authMethod=consumer, quotaProject=
+I0528 19:52:02.493210 74753 server_oauth.go:217] OAuth: authenticated successfully as guyguy2@gmail.com
+I0528 19:52:02.493216 74753 server_oauth.go:223] b.codeAssistClient.AuthProvider (0x5aa41ea82b00) is same as b.cliAuth (0x5aa41ea82b00)
+I0528 19:52:03.284714 74753 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd445b53fc7d33701
+I0528 19:52:03.712153 74753 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc8d61e580fc3d5be
+I0528 19:52:03.716206 74753 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (High)"
+I0528 19:52:03.791298 74753 manager.go:551] Full redraw completed (rerenderAll) for conversation  (epoch 0, items 1)
+I0528 19:52:03.837040 74753 input_loop.go:499] Auth done received, triggering experiment refresh
+I0528 19:52:03.837146 74753 experiment_manager.go:35] Starting experiment refresh after login
+I0528 19:52:04.182614 74753 experiment_manager.go:39] Experiments refreshed after login
+I0528 19:52:04.182990 74753 manager.go:941] Reloading system slash commands
+I0528 19:52:04.565509 74753 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf2d7b28902c4a079
+I0528 19:52:05.283930 74753 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xaef30bebf037b74b
+I0528 19:52:05.460716 74753 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (High)"
+I0528 19:52:05.461021 74753 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (High)"
+I0528 19:52:05.581233 74753 input_loop.go:499] Auth done received, triggering experiment refresh
+I0528 19:52:05.581425 74753 experiment_manager.go:35] Starting experiment refresh after login
+I0528 19:52:05.592189 74753 input_loop.go:499] Auth done received, triggering experiment refresh
+I0528 19:52:05.592331 74753 experiment_manager.go:35] Starting experiment refresh after login
+I0528 19:52:05.756334 74753 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (High)"
+I0528 19:52:05.855730 74753 experiment_manager.go:39] Experiments refreshed after login
+I0528 19:52:05.855993 74753 manager.go:941] Reloading system slash commands
+I0528 19:52:05.862219 74753 manager.go:945] Slash commands unchanged, skipping update
+I0528 19:52:05.882234 74753 input_loop.go:499] Auth done received, triggering experiment refresh
+I0528 19:52:05.882358 74753 experiment_manager.go:35] Starting experiment refresh after login
+I0528 19:52:05.954404 74753 experiment_manager.go:39] Experiments refreshed after login
+I0528 19:52:05.954701 74753 manager.go:941] Reloading system slash commands
+I0528 19:52:05.961036 74753 manager.go:945] Slash commands unchanged, skipping update
+I0528 19:52:05.963473 74753 experiment_manager.go:39] Experiments refreshed after login
+I0528 19:52:05.963608 74753 manager.go:941] Reloading system slash commands
+I0528 19:52:05.970201 74753 manager.go:945] Slash commands unchanged, skipping update
+I0528 19:52:06.197412 74753 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa78d55b4e7f274dd
+I0528 19:52:06.226422 74753 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (High)"
+I0528 19:52:06.226532 74753 manager.go:941] Reloading system slash commands
+I0528 19:52:06.232046 74753 manager.go:945] Slash commands unchanged, skipping update
+I0528 19:52:11.572836 74753 conversation_manager.go:284] Starting new conversation (agent=false)
+I0528 19:52:11.572982 74753 server.go:726] Creating new cascade trajectory (agentScript=false)
+I0528 19:52:11.573022 74753 server.go:734] Conversation using project ID: bcbb2731-8e34-45f2-8f1d-7d97e91c59ec
+I0528 19:52:11.575587 74753 server.go:755] Created conversation 39bf4418-cbb8-4f92-a088-0dc8021df3e9
+I0528 19:52:11.576265 74753 conversation_manager.go:378] Streaming conversation 39bf4418-cbb8-4f92-a088-0dc8021df3e9
+I0528 19:52:11.576783 74753 server.go:774] Starting conversation update stream for 39bf4418-cbb8-4f92-a088-0dc8021df3e9
+I0528 19:52:12.804291 74753 common.go:413] CLI program exited, shutting down
+I0528 19:52:12.804691 74753 manager.go:459] CLI store manager shutting down
+I0528 19:52:12.806388 74753 conversation_manager.go:346] Stopping conversation stream
+I0528 19:52:12.807115 74753 server.go:2186] Language server shutting down

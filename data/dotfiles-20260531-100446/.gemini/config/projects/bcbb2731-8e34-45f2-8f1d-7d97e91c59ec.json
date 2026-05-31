@@ -1,0 +1,14 @@
+{
+  "id":  "bcbb2731-8e34-45f2-8f1d-7d97e91c59ec",
+  "name":  "/Users/guy/dev/ai/ai-tools/todoist",
+  "projectResources":  {
+    "resources":  [
+      {
+        "gitFolder":  {
+          "folderUri":  "file:///Users/guy/dev/ai/ai-tools/todoist",
+          "allowWrite":  true
+        }
+      }
+    ]
+  }
+}
